@@ -388,27 +388,93 @@
                 display: block;
             }
 
-            .nav-bottom {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: rgba(17, 17, 17, 0.95);
-                flex-direction: column;
-                align-items: center;
-                padding: 1rem 0;
-            }
+           .nav-bottom {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(17, 17, 17, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
 
-            .nav-bottom.active {
-                display: flex;
-            }
+    .nav-bottom.active {
+        display: flex;
+    }
 
-            .nav-category {
-                padding: 1rem 0;
-                font-size: 1rem;
-            }
-        }
+    .nav-category {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Slider */
+    .slider {
+        margin-top: 60px; /* Adjusted for smaller navbar */
+        height: 60vh; /* Reduce height for mobile */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); /* Adjusted clip-path */
+    }
+
+    .sliderImg {
+        width: 80%; /* Reduce image size */
+    }
+
+    .sliderTitle {
+        font-size: 30px; /* Reduce title size */
+        top: 15%;
+    }
+
+    .buyButton {
+        font-size: 20px; /* Reduce button size */
+        top: 40%;
+    }
+
+    /* Features Section */
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    .featureDesc {
+        width: 80%; /* Adjust description width */
+    }
+
+    /* Gallery Section */
+    .gallery {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .galleryItem {
+        margin-bottom: 20px;
+    }
+
+    .galleryImg {
+        height: 300px; /* Reduce image height */
+    }
+
+    .galleryTitle {
+        font-size: 24px; /* Reduce title size */
+    }
+
+    /* Footer */
+    .footerLeft {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footerMenu {
+        margin-bottom: 20px;
+    }
+
+    .fIcons {
+        justify-content: center;
+    }
+}
 
         @media screen and (max-width: 480px) {
             .navbar {
@@ -422,6 +488,31 @@
             .offer-badge {
                 font-size: 0.8rem;
                 padding: 0.4rem 0.8rem;
+            }
+            .sliderTitle {
+                font-size: 24px; /* Further reduce title size */
+            }
+
+             .buyButton {
+                font-size: 16px; /* Further reduce button size */
+            }
+
+    /* Features Section */
+            .featureTitle {
+                font-size: 18px; /* Reduce title size */
+            }
+
+            .featureDesc {
+                font-size: 14px; /* Reduce description size */
+            }
+
+    /* Gallery Section */
+            .galleryImg {
+                height: 200px; /* Further reduce image height */
+            }
+
+            .galleryTitle {
+                font-size: 20px; /* Further reduce title size */
             }
         }
     </style>
